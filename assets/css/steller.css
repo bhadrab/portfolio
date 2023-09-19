@@ -12756,7 +12756,7 @@ pre {
 }
 
 .section:nth-child(odd) {
-  background: white;
+  background: var(--paleyellow);
 }
 
 .section.bg-white {
