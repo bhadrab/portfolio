@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Roommate Monitor</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#Introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#Design">Design</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#Results">Results</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#Conclusion">Conclusion</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#Appendices">Appendices</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+    <header class="masthead" style="background-image:url('background.png')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1 style="text-align: center;">Home Alert Center</h1>
+                        <h2 class="subheading" style="text-align: center;">On the Pico W</h2>
+                        <span class="meta" style="text-align: center;">
+                            By Eric Sun (eds228) and Bhadra Bejoy (bb584)
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Post Content-->
+    <article class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+
+                    <a id="Introduction"></a>
+                    <h1>Introduction</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KFigU0svLKo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>
+                        We used a Pico W to host a webserver with hardware peripherals at home which would allow
+                        housemates to receive or send alerts to each other from their mobile devices.
+                    </p>
+
+                    <p>
+                        Our goal was first to use the Pico W to connect to the internet and host a webserver we could
+                        connect from our personal devices. We added layers of complexity as we went, based on what we
+                        were interested in implementing and what would be a positive addition to the Alert Center. We
+                        first wanted to use the webpage to control an output device, so we implemented a TFT display on
+                        which we could display messages entered through the webpage. We then wanted to try communicating
+                        from pico to personal device, so we added a sound sensor and displayed a red square on the
+                        webpage when a loud sound was detected. We also added two switches (one for each housemate) that
+                        each housemate would toggle to indicate whether or not they are home, this state would also be
+                        displayed on the webpage. Our last task was implementing audio. We used DDS to synthesize sounds
+                        that could be selected from the remote webpage and played at home.
+                    </p>
+
+		<I
+
+
+                    <a id="Design"></a> <br>
+                    <h1>Design</h1> <br>
+                    <h4>High Level</h4>
+                    <p>
+                        Our project can be broken down into 4 major components. The hardware peripherals, the
+                        micropython code, the C modules, and the webpage.
+                    </p>
+
+                    <p>
+                        The part of the Alert Center that remains at home consisted of all the hardware. The Pico W and
+                        the peripherals were soldered onto a protoboard. A TFT display was used to display messages sent
+                        from the webpage. We had a switch assigned to each housemate to represent their state (switch 1
+                        in position 1: housemate 1 is home, switch 1 in position 2: housemate 1 is not home) which was
+                        displayed on the webpage. A sound sensor was used to detect if there was a fire alarm or other
+                        loud noise. Finally, a DAC, audio socket, and speaker were used to play audio.
+                    </p>
+
+                    <p>
+                        We used micropython to host the webpage as the documentation for it was much better compared to
+                        the documentation for C. This choice made the internet connectivity aspect of our project much
+                        simpler as we had a good guide to follow. The Thonny IDE was used as our development environment
+                        to run the micropython code, open a serial connection, and store files on the Pico W. The TFT
+                        display library, the html page, TFT font files, and the main.py python program were stored
+                        locally on the Pico W. The main.py python file contained the logic for connecting to the
+                        internet, launching the webpage, and handling the events triggered by the hardware peripherals
+                        or the webpage.
+                    </p>
+
+                    <p>
+                        The html webpage served as the remote user interface for the system. We styled it using CSS and
+                        included some JS elements for functionality.
+                        <img class="img-fluid" src="webpage.png" alt="Webpage Image" />
+                        <span class="caption text-muted">Webpage</span>
+                    </p>
+
+                    <p>
+                        C code was used to perform direct digital synthesis (DDS) since micropython cannot complete the
+                        computations and write to the DAC quickly enough. We also already had most of the code written
+                        for this from lab 1, so we had some boiler plate already. We experienced great difficulty with
+                        calling native C functions from micropython, but eventually we established communication between
+                        the C and micropython code bases.
+                    </p>
+
+
+                    <h4>Hardware</h4>
+                    <p>
+                        The hardware of the project includes a Raspberry Pi Pico W, ILI9340 TFT Display, 2 on-on toggle
+                        switches, KY-037 sound sensor, MCP4822 DAC, and an audio socket mounted onto a protoboard.
+                        Speakers are connected to the audio socket.
+                    </p>
+
+                    <p>
+                        Our project started off on a breadboard, once we tested each individual component's
+                        functionality, we soldered them onto a protoboard. This made the system more sturdy and serve
+                        its purpose of being a Home Alert Center as it could be safely mounted somewhere in the house.
+                    </p>
+
+                    <p>
+                        The Pico W was chosen for our microcontroller board as it included the Infineon CYW43439 chip
+                        providing it with WiFi connectivity.
+                    </p>
+
+                    <p>
+                        The TFT Display communicated with the Pico W via SPI. We referenced the Adafruit webpage about
+                        this display to understand pin functions. The VBUS pin from the Pico W was used to provide the
+                        display with 5V.
+                    </p>
+
+                    <p>
+                        The center pin of each toggle switch was connected to a GPIO pin on the Pico W. The each of the
+                        other two pins were tied to ground and 3V3. So when the switch was flipped one way, the input to
+                        the Pico W was high, and low the other way.
+                    </p>
+
+                    <p>
+                        The sound sensor was connected to a Pico W GPIO pin. The mic was also removed from the module
+                        and placed in a more practical location on the protoboard. The module had a potentiometer which
+                        allowed us to tune its sensitivity. If there was a noise louder than the set threshold, the
+                        input to the Pico W was high.
+                    </p>
+
+                    <p>
+                        A 12-bit Digital-to-Analog Converter (DAC) was used to convert the digital signals synthesized
+                        using DDS to analog signals. The DAC communicates with the Pico W over SPI. The outputs of the
+                        DAC are sent to an audio socket which is connected to a speaker to output audio.
+                    </p>
+
+
+
+                    <h4>Micropython Software</h4>
+                    <p>Here.</p>
+                    <p>Here.</p>
+
+                    <h4>C Audio Code</h4>
+                    <p>Here.</p>
+                    <p>Here.</p>
+
+                    <h4>Calling C from micropython</h4>
+                    <p>Here.</p>
+                    <p>Here.</p>
+
+                    <a id="Results"></a> <br>
+                    <h1>Results</h1>
+                    <p>Here.</p>
+                    <p>Here.</p>
+
+                    <a id="Conclusion"></a> <br>
+                    <h1>Conclusion</h1>
+                    <p>Here.</p>
+                    <p>Here.</p>
+
+                    <a id="Appendices"></a> <br>
+                    <h1>Appendices</h1><br>
+                    <h4>Appendix A : Permissions</h4>
+                    <p>The group approves this report for inclusion on the course website. The group approves the video
+                        for inclusion on the course YouTube channel.</p>
+
+
+                    <h4>Appendix B : Code</h4>
+                    <p>
+                        <a href="main.py">main.py</a>
+                    </p>
+                    <p>
+                        <a href="examplemodule.c">cexamplemodule.c</a>
+                    </p>
+                    <p>
+                        <a href="page.html">Webpage</a>
+                    </p>
+
+
+                    <h4>Appendix C : Hardware Design</h4>
+                    <p><img class="img-fluid" src="hardware-schematic.png" alt="Hardware Block Diagram" /><span
+                            class="caption text-muted">Hardware Block Diagram</span></p>
+
+
+                    <h4>Appendix D : Bill of Materials </h4>
+                    <p>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Cost</th>
+                        </tr>
+                        <tr>
+                            <td>Raspberry Pi Pico W</td>
+                            <td>$11.87</td>
+                        </tr>
+                        <tr>
+                            <td>MCP 4822 DAC</td>
+                            <td>$3.59</td>
+                        </tr>
+                        <tr>
+                            <td>SJ1-3553NG Audio Socket</td>
+                            <td>$0.76</td>
+                        </tr>
+                        <tr>
+                            <td>Speakers</td>
+                            <td>$14.99</td>
+                        </tr>
+                        <tr>
+                            <td>AUX cables </td>
+                            <td>$4.35</td>
+                        </tr>
+                        <tr>
+                            <td>TFT Display</td>
+                            <td>$13.20</td>
+                        </tr>
+                        <tr>
+                            <td>Switch (2)</td>
+                            <td>$2.21</td>
+                        </tr>
+                        <tr>
+                            <td>KY-037 Sound Sensor</td>
+                            <td>$2.87</td>
+                        </tr>
+                        <tr>
+                            <td>Protoboard</td>
+                            <td>$4.50</td>
+                        </tr>
+                    </table>
+                    </p>
+
+
+                    <h4>Appendix E : </h4>
+                    <p>Here.</p>
+
+
+
+                    <h4>References</h4>
+                    <p><a href="https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf">Connecting
+                            to the Internet with Raspberry Pi Pico W</a>
+                    </p>
+                    <p><a href="https://github.com/jeffmer/micropython-ili9341">TFT Library</a>
+                    </p>
+                    <p><a href="https://learn.adafruit.com/2-2-tft-display/overview">Adafruit TFT Overview</a>
+                    </p>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Footer-->
+    <footer class="border-top" style="background-image:url('background.png')">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/bhadrab/HomeAlertCenter">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="small text-center fst-italic"> Eric Sun (eds228) & Bhadra Bejoy (bb584)</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
