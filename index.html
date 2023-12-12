@@ -28,16 +28,35 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About Me</a>
                     </li>
-                    <!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
-                    </li>
-                    -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#projects" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                            <!-- Dropdown content goes here -->
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item nav-link" href="sawProject.html" onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">SAW Robot</a>
+                            <a class="dropdown-item nav-link" href="https://bhadrab.github.io/ECE4160/" onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">Fast Robots</a>
+                            <a class="dropdown-item nav-link" href="auxiliaryProject.html" onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">Auxiliary System</a>
+                            <a class="dropdown-item nav-link" href="homealertcenter/index.html" onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">Home Alert Center</a>
+                        </div>
                     </li>
                 </ul>
             </div>
+            
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+                // Add jQuery to handle hover event
+                $(document).ready(function(){
+                    $('.nav-item.dropdown').hover(function(){
+                        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+                    }, function(){
+                        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+                    });
+                });
+            </script>
+            
         </div>
     </nav>
     <!-- End of page navibation -->
@@ -77,31 +96,77 @@
                     <img src="assets/imgs/headshot.jpg" alt="" class="img-thumbnail mb-4">
                 </div>
                 <div class="pl-md-4 col-md-9">
-                    <h6 class="title">Hi! I'm Bhadra Bejoy,</h6>
+
+                    <h6 class="title" style="font-size: 25px;">Hi! I'm Bhadra Bejoy,</h6>
                     <p>
                         I'm a senior at Cornell University, majoring in Electrical and Computer Engineering, with a
                         passion for engineering to create a better world.
                     </p>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="custom-card card border">
+                                <div class="card-body">
+                                    <div class="front">
+                                        <img src="assets/imgs/robotCard.png" height="110" class="mt-5">
+                                        <div class="card-text">
+                                            <h4>Robotics</h4>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <p style="font-size: 14px; padding: 5%; padding-top: 6%;">
+                                            I enjoy the world of robotics, through my research experience and course
+                                            work, I've been able to combine creativity and engineering to bring machines
+                                            to life. Whether it's designing PCBs, simulating, writing embedded code, or
+                                            fine-tuning the mechanics, I thrive on the challenges that robotics presents
+                                            and am excited for its future.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="custom-card card border">
+                                <div class="card-body">
+                                    <div class="front">
+                                        <img src="assets/imgs/evCard.png" height="110" class="mt-5">
+                                        <div class="card-text">
+                                            <h4>Automotive</h4>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <p style="font-size: 14px; padding: 5%; padding-top: 6%;">
+                                            I'm equally interested in the electric vehicle industry - a field that holds
+                                            the promise of reducing our environmental
+                                            footprint. My internship with Rivian and involvement with Cornell Electric
+                                            Vehicles has allowed me to explore interests in PCB design, power
+                                            electronics, testing and validation, and analog circuit design.
 
-                    <p>
-                        I enjoy the world of robotics, through my research experience and course work, I've been able to
-                        combine creativity and engineering to bring machines to life. Whether it's designing
-                        PCBs, simulating, writing embedded code, or fine-tuning the mechanics, I thrive on the
-                        challenges that
-                        robotics presents and am excited for its future.
-                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="custom-card card border">
+                                <div class="card-body">
+                                    <div class="front">
+                                        <img src="assets/imgs/ecCard.png" height="110" class="mt-5">
+                                        <div class="card-text">
+                                            <h4>Extracurriculars</h4>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <p style="font-size: 14px; padding: 5%; padding-top: 35%;">
+                                            When I'm not in the EE lab, you can find me drawing on my iPad, cooking,
+                                            designing and sewing clothes, or dancing:)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <p>
-                        I'm equally interested in the electric vehicle industry - a field that holds the promise of
-                        transforming transportation while reducing our environmental footprint. My internship with
-                        Rivian and involvement with Cornell Electric Vehicles has allowed me to explore interests in PCB
-                        design, power electronics, testing and validation, and analog circuit design.
-                    </p>
 
-                    <p>
-                        When I'm not in the EE lab, you can find me drawing on my iPad, cooking, designing and sewing
-                        clothes, or dancing:)
-                    </p>
+
 
                 </div>
             </div>
@@ -280,8 +345,8 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="socials">
-                        <a href="assets/Bhadra_Bejoy_Resume_FA23.pdf"><button
-                                class="btn btn-primary rounded" style="margin-right: 5px;">Resume</button></a>
+                        <a href="assets/Bhadra_Bejoy_Resume_FA23.pdf"><button class="btn btn-primary rounded"
+                                style="margin-right: 5px;">Resume</button></a>
                         <a class="social-item" href="https://www.linkedin.com/in/bhadra-bejoy/">
                             <i class="ti-linkedin"></i></a>
                         <a class="social-item" href="mailto: bb584@cornell.edu">
