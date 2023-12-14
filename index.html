@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Steller main styles -->
     <link rel="stylesheet" href="assets/css/steller.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('a');
+            links.forEach(function (link) {
+                if (link.hostname !== window.location.hostname) {
+                    link.setAttribute('target', '_blank');
+                }
+            });
+        });
+    </script>
+    
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -80,9 +92,9 @@
 
 
                 <div class="socials mt-4">
-                    <a href="assets/Bhadra_Bejoy_Resume_FA23.pdf"><button
+                    <a href="assets/Bhadra_Bejoy_Resume_FA23.pdf" target="_blank"><button
                             class="btn btn-primary rounded">Resume</button></a>
-                    <a class="social-item" href="https://www.linkedin.com/in/bhadra-bejoy/">
+                    <a class="social-item" href="https://www.linkedin.com/in/bhadra-bejoy/" target="_blank">
                         <i class="ti-linkedin"></i></a>
                     <a class="social-item" href="mailto: bb584@cornell.edu">
                         <i class="ti-email"></i></a>
@@ -381,9 +393,9 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="socials">
-                        <a href="assets/Bhadra_Bejoy_Resume_FA23.pdf"><button class="btn btn-primary rounded"
+                        <a href="assets/Bhadra_Bejoy_Resume_FA23.pdf" target="_blank"><button class="btn btn-primary rounded"
                                 style="margin-right: 5px;">Resume</button></a>
-                        <a class="social-item" href="https://www.linkedin.com/in/bhadra-bejoy/">
+                        <a class="social-item" href="https://www.linkedin.com/in/bhadra-bejoy/" target="_blank">
                             <i class="ti-linkedin"></i></a>
                         <a class="social-item" href="mailto: bb584@cornell.edu">
                             <i class="ti-email"></i></a>

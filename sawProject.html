@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Steller main styles -->
     <link rel="stylesheet" href="assets/css/steller.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('a');
+            links.forEach(function (link) {
+                if (link.hostname !== window.location.hostname) {
+                    link.setAttribute('target', '_blank');
+                }
+            });
+        });
+    </script>
+    
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40">
@@ -38,11 +49,11 @@
                 <h6 class="title mb-3">SAW Robot</h6>
                 <p>Made for Collective Embodied Intelligence</p>
 
-                <div class="socials mt-4">
+                <!-- <div class="socials mt-4">
                     <a href=""><button class="btn btn-primary rounded">PCB
                             Docs</button></a>
                     <a href=""><button class="btn btn-primary rounded">Code</button></a>
-                </div>
+                </div> -->
             </div>
             <div class="img-holder" style="margin-bottom: 10%;">
                 <img src="assets/imgs/sawRobot.png" style="width: 80%;" alt="">

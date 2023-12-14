@@ -12,6 +12,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/steller.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('a');
+            links.forEach(function (link) {
+                if (link.hostname !== window.location.hostname) {
+                    link.setAttribute('target', '_blank');
+                }
+            });
+        });
+    </script>
+    
 </head>
 
 <body>
@@ -435,15 +446,8 @@
 
                 <h4>Appendix B : Code</h4>
                 <p>
-                    <a href="assets/code/main.py">main.py</a>
+                    <a href="https://github.com/bhadrab/HomeAlertCenter">On Github</a>
                 </p>
-                <p>
-                    <a href="assets/code/examplemodule.c">cexamplemodule.c</a>
-                </p>
-                <p>
-                    <a href="assets/code/page.html">Webpage</a>
-                </p>
-
 
 
 

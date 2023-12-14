@@ -13,6 +13,17 @@
     <link rel="icon" type="image/x-icon" href="../assets/imgs/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../assets/css/steller.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('a');
+            links.forEach(function (link) {
+                if (link.hostname !== window.location.hostname) {
+                    link.setAttribute('target', '_blank');
+                }
+            });
+        });
+    </script>
+    
 </head>
 
 <body>
@@ -43,7 +54,7 @@
                 <p>Made for ECE 4160</p>
 
                 <div class="socials mt-4">
-                    <a href="https://github.com/bhadrab/HomeAlertCenter"><button
+                    <a href="https://github.com/bhadrab/ECE4160LabCode"><button
                             class="btn btn-primary rounded">Code</button></a>
                 </div>
             </div>
