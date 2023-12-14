@@ -30,7 +30,7 @@
   --success: #A3C14A;
   --info: #47D8E0;
   --warning: #FAD02C;
-  --danger: #47d7ff;
+  --danger: #8A4F7Daa;
   --light: #f8f9fa;
   --dark: #343a40;
   --paleyellow: #FFFDD6;
@@ -77,7 +77,7 @@ body {
   line-height: 1.5;
   color: #495057;
   text-align: left;
-  background-color:var(--paleyellow);
+  background-color: var(--paleyellow);
 }
 
 [tabindex="-1"]:focus {
@@ -525,7 +525,7 @@ mark,
   background-color: var(--secondary);
   max-width: 100%;
   height: auto;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 .figure {
@@ -2791,7 +2791,7 @@ textarea.form-control.is-valid {
   font-size: 0.875rem;
   line-height: 1.5;
   color: #fff;
-  background-color: rgba(248, 92, 112, 0.9);
+  background-color: var(--danger);
   border-radius: 0.25rem;
 }
 
@@ -3106,7 +3106,7 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #ff5224;
+  background-color: var(--danger);
   border-color: #ff4817;
 }
 
@@ -5945,7 +5945,7 @@ a.badge:focus {
 a.badge-primary:hover,
 a.badge-primary:focus {
   color: #212529;
-  background-color: #ff5224;
+  background-color: var(--danger);
 }
 
 a.badge-primary:focus,
@@ -7672,7 +7672,7 @@ a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #ff5224 !important;
+  background-color: var(--danger) !important;
 }
 
 .bg-secondary {
@@ -11983,7 +11983,7 @@ a.text-dark:focus {
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   pre {
@@ -12189,7 +12189,7 @@ pre {
 }
 
 .img-wrapper .overlay {
-  background: rgba(0, 75, 127, 0.7);
+  background: rgba(0, 75, 127, 0.85);
   position: absolute;
   left: 0;
   bottom: 100%;
@@ -12206,6 +12206,7 @@ pre {
   position: absolute;
   top: 0%;
   left: 50%;
+  width: 80%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -12281,13 +12282,17 @@ pre {
 .custom-card .card-body {
   padding: 55px 0;
   display: flex;
-  flex-direction: column; /* Display image and text in a column */
-  align-items: center; /* Center content horizontally */
-  text-align: center; /* Center content vertically */
+  flex-direction: column;
+  /* Display image and text in a column */
+  align-items: center;
+  /* Center content horizontally */
+  text-align: center;
+  /* Center content vertically */
 }
 
 .custom-card .card-body img {
-  margin-bottom: 10px; /* Add some space between image and text */
+  margin-bottom: 10px;
+  /* Add some space between image and text */
 }
 
 .custom-card .card-text h4 {
@@ -12322,47 +12327,56 @@ pre {
 
 
 .custom-card {
-  perspective: 1000px; /* Set perspective for 3D effect */
+  perspective: 1000px;
+  /* Set perspective for 3D effect */
 }
 
 .card-body {
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.6s; /* Add transition for smooth flip effect */
+  transition: transform 0.6s;
+  /* Add transition for smooth flip effect */
 }
 
 .custom-card:hover .card-body {
-  transform: rotateY(180deg); /* Rotate the card on hover */
-  cursor: pointer;
+  transform: rotateY(180deg);
+  /* Rotate the card on hover */
+  /* cursor: pointer; */
 }
 
 .front,
-.back {  
-  box-shadow: 2px 3px 10px rgba(0,0,0, 0.3); 
-  border-radius: 15px; 
+.back {
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
   background-color: #8a4f7d;
-  backface-visibility: hidden; /* Hide the backface of the card during rotation */
- 
+  backface-visibility: hidden;
+  /* Hide the backface of the card during rotation */
+
 }
 
 .front {
-  transform: rotateY(0deg); /* Initial state for the front of the card */
+  transform: rotateY(0deg);
+  /* Initial state for the front of the card */
 }
 
 .back {
   color: var(--paleyellow);
-  transform: rotateY(180deg); /* Initial state for the back of the card */
+  transform: rotateY(180deg);
+  /* Initial state for the back of the card */
 }
+
 .custom-card {
-  height: 270px; /* Adjust the width as needed */
+  height: 270px;
+  /* Adjust the width as needed */
 }
+
 .front,
 .back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
@@ -12526,7 +12540,8 @@ pre {
   min-height: 80px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background: rgba(255,255,255, 0.3);;
+  background: rgba(255, 255, 255, 0.3);
+  ;
 }
 
 .navbar .navbar-brand img {
@@ -12829,4 +12844,22 @@ pre {
 
 .section.bg-gray {
   background: white;
+}
+
+.skills {
+  background-color: #8A4F7Daa;
+  border-color: var(--primary);
+  border-width: 2px;
+}
+
+.skills:hover {
+  background-color: #8A4F7Daa;
+  border-color: var(--primary);
+  border-width: 2px;
+}
+
+.skills:focus {
+  outline: 0px dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  box-shadow: 0 0 0 0rem rgba(222, 109, 80, 0);
 }

@@ -29,34 +29,43 @@
                         <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#projects" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#projects" id="projectsDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Projects
                         </a>
                         <div class="dropdown-menu" aria-labelledby="projectsDropdown">
                             <!-- Dropdown content goes here -->
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item nav-link" href="sawProject.html" onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">SAW Robot</a>
-                            <a class="dropdown-item nav-link" href="fastRobots/index.html" onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">Fast Robots</a>
-                            <a class="dropdown-item nav-link" href="auxiliaryProject.html" onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">Auxiliary System</a>
-                            <a class="dropdown-item nav-link" href="homealertProject.html" onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">Home Alert Center</a>
+                            <a class="dropdown-item nav-link" href="sawProject.html"
+                                onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">SAW
+                                Robot</a>
+                            <a class="dropdown-item nav-link" href="fastRobots/index.html"
+                                onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">Fast
+                                Robots</a>
+                            <a class="dropdown-item nav-link" href="auxiliaryProject.html"
+                                onmouseover="this.style.color='#FFFDD6'"
+                                onmouseout="this.style.color='#7f7f72'">Auxiliary System</a>
+                            <a class="dropdown-item nav-link" href="homealertProject.html"
+                                onmouseover="this.style.color='#FFFDD6'" onmouseout="this.style.color='#7f7f72'">Home
+                                Alert Center</a>
                         </div>
                     </li>
                 </ul>
             </div>
-            
+
             <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
             <script>
                 // Add jQuery to handle hover event
-                $(document).ready(function(){
-                    $('.nav-item.dropdown').hover(function(){
+                $(document).ready(function () {
+                    $('.nav-item.dropdown').hover(function () {
                         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-                    }, function(){
+                    }, function () {
                         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
                     });
                 });
             </script>
-            
+
         </div>
     </nav>
     <!-- End of page navibation -->
@@ -277,7 +286,7 @@
     <!-- Portfolio section -->
     <section id="projects" class="section">
         <div class="container text-center">
-            <h6 class="title mb-4">Projects</h6>
+            <h6 class="title mb-4 ">Check out my projects!</h6>
 
             <div class="row">
                 <div class="col-1"></div>
@@ -288,6 +297,14 @@
                             <div class="overlay">
                                 <div class="overlay-infos">
                                     <h5>SAW Robot</h5>
+                                    <p>
+                                        A Single Actuator Wave robot being designed and built for the the Collective
+                                        Embodied Intelligence Lab at Cornell
+                                    </p>
+                                    <button class="btn btn-primary rounded skills">PCB</button>
+                                    <button class="btn btn-primary rounded skills">Embedded</button>
+                                    <button class="btn btn-primary rounded skills">CAD</button>
+
                                 </div>
                             </div>
                         </a>
@@ -298,6 +315,13 @@
                             <div class="overlay">
                                 <div class="overlay-infos">
                                     <h5>Auxiliary System</h5>
+                                    <p>
+                                        A custom PCB and harnessing project featuring the ATmega2560 IC built for
+                                        Cornell Electric Vehicles
+                                    </p>
+                                    <button class="btn btn-primary rounded skills">PCB</button>
+                                    <button class="btn btn-primary rounded skills">Embedded</button>
+                                    <button class="btn btn-primary rounded skills">Harness</button>
                                 </div>
                             </div>
                         </a>
@@ -311,6 +335,12 @@
                             <div class="overlay">
                                 <div class="overlay-infos">
                                     <h5>Fast Robot</h5>
+                                    <p>
+                                        An RC car retrofitted with the Artemis microcontroller, motor driver, and sensor
+                                        suite to implement various robotics algorithms
+                                    </p>
+                                    <button class="btn btn-primary rounded skills">Algorithms</button>
+                                    <button class="btn btn-primary rounded skills">Embedded</button>
                                 </div>
                             </div>
                         </a>
@@ -321,6 +351,12 @@
                             <div class="overlay">
                                 <div class="overlay-infos">
                                     <h5>Home Alert Center</h5>
+                                    <p>
+                                        An IoT node created with the Raspberry Pi Pico to host a roommate communication
+                                        device
+                                    </p>
+                                    <button class="btn btn-primary rounded skills">Microcontrollers</button>
+                                    <button class="btn btn-primary rounded skills">Embedded</button>
                                 </div>
                             </div>
                         </a>
