@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fast Robots Labs</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Bhadra Bejoy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="hidescrollbar collapse navbar-collapse navbar-nav-scroll" id="navbarResponsive">
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#projects">Portfolio
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home
+                        <img src="assets/img/indexmain.png" alt="Home" title="Home Page " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab1.html">Lab 1
+                        <img src="assets/img/lab1main.PNG" alt="Lab 1 Artemis" title="Lab 1 Artemis " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab2.html">Lab 2
+                        <img src="assets/img/lab2main.PNG" alt="Lab 2 BLE" title="Lab 2 BLE" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab3.html">Lab 3
+                        <img src="assets/img/lab3main.PNG" alt="Lab 3 TOF" title="Lab 3 TOF" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab4.html">Lab 4
+                        <img src="assets/img/lab4main.PNG" alt="Lab 4 IMU" title="Lab 4 IMU" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab5.html">Lab 5
+                        <img src="assets/img/lab5main.png" alt="Lab 5" title="Lab 5" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab6.html">Lab 6
+                        <img src="assets/img/lab6main.png" alt="Lab 6" title="Lab 6" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab7.html">Lab 7
+                        <img src="assets/img/lab7main.png" alt="Lab 7" title="Lab 7" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab8.html">Lab 8
+                        <img src="assets/img/lab8main.png" alt="Lab 8" title="Lab 8" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab9.html">Lab 9
+                        <img src="assets/img/lab9main.png" alt="Lab 9" title="Lab 9" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab10.html">Lab 10
+                        <img src="assets/img/lab10main.png" alt="Lab 10" title="Lab 10" height="175px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab11.html">Lab 11
+                        <img src="assets/img/lab11main.png" alt="Lab 11" title="Lab 11" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab12.html">Lab 12
+                        <img src="assets/img/lab12main.png" alt="Lab 12" title="Lab 12" height="90px" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+
+
+
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-2">Lab 10 <span class="text-primary">Localisation Simulation</span></h2>
+            <p class="mb-5">
+                The goal of this lab is to implement grid localization using the Bayes filter using a simulator.
+            </p>
+
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Bayes Filter</h3>
+                    <p>
+                        The Bayes Filter is used to estimate the state of the robot based on odometry and sensor data
+                        and prior belief of the state. We used this filter to simulate localization of the robot. The
+                        first step of the Bayes filter is prediction. This step uses odometry data and the current
+                        state. The next step is the update step which uses the sensor data. The lab10 notebook that was
+                        provided to us set up the filter for us using 5 functions. In this lab we wrote those functions
+                        and simulated grid localization for the given sample trajectory. The 5 functions are detailed
+                        below.
+                    </p>
+
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">COMPUTE CONTROL</h3>
+                    <p>
+                        This function uses the current and previous state of the robot to calculate the control input of
+                        the Bayes FIlter. The control input consists of rotation and translation components.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/a51c309625cb009ce7d3e00cdb4110a4.js"></script>
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">ODOMETRY MOTION MODEL</h3>
+                    <p>
+                        This function uses a gaussian distribution to calculate the probability that the movement in the
+                        previous step occurred i.e the probability that the robot is in the current pose give the
+                        previous pose and the control input.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/0a473dc3f16bac3a8a902f020078022c.js"></script>
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">PREDICTION STEP</h3>
+                    <p>
+                        This function was used to predict the position of the robot. We loop through all the previous
+                        and current states and calculate the probability that the robot is in each of those states. If
+                        the previous belief was greater than 0.0001 the odometry_motion_model function was used to
+                        calculate the probability, if it was less than 0.0001 no calculations are done because the state
+                        does not need to be considered as it is not likely.
+                    </p>
+
+                    <script src="https://gist.github.com/bhadrab/5efd896c4589854045e1f5089451e150.js"></script>
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">SENSOR MODEL</h3>
+                    <p>
+                        This function uses a Gaussian to calculate the probability of sensor readings given the robots
+                        state. For the Gaussian, the true observation is set as the mean and we have a value
+                        sensor_sigma which is the standard deviation. An array is returned containing the likelihoods of
+                        the sensor measurements.
+                    </p>
+
+                    <script src="https://gist.github.com/bhadrab/7e0c120ee4cc077d335f2f52a93fd004.js"></script>
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">UPDATE STEP</h3>
+                    <p>
+                        In this function we use the previously calculated sensor measurements and control inputs to
+                        calculate the belief that the robot is in each state. In each state we calculate the relief by
+                        multiplying the prediction belief and the probability based on the sensor data.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/e2876d1094438276361cdd54345e6b4f.js"></script>
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-1 ">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Video</h3>
+                    <video class="mb-3" width="100%" controls="">
+                        <source src="assets/img/lab10video.mp4.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+
+            </div>
+            <p>
+                I unfortunatley was not able to zoom into the plotter for some reason but I ran my code on my lab
+                partners device and made sure that the plotter output was as expected.
+            </p>
+
+            <p>
+                I referred to <a href="https://tiffanyguo8.github.io/ECE4160/lab10.html#">Tiffany's</a> and <a
+                    href="https://rafigott.github.io/Fast-Robots-RafaelGottlieb/#Lab10">Rafael's</a> pages whenever I
+                was confused.
+            </p>
+
+
+    </section>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

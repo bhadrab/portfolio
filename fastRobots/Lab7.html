@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fast Robots Labs</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Bhadra Bejoy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="hidescrollbar collapse navbar-collapse navbar-nav-scroll" id="navbarResponsive">
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#projects">Portfolio
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home
+                        <img src="assets/img/indexmain.png" alt="Home" title="Home Page " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab1.html">Lab 1
+                        <img src="assets/img/lab1main.PNG" alt="Lab 1 Artemis" title="Lab 1 Artemis " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab2.html">Lab 2
+                        <img src="assets/img/lab2main.PNG" alt="Lab 2 BLE" title="Lab 2 BLE" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab3.html">Lab 3
+                        <img src="assets/img/lab3main.PNG" alt="Lab 3 TOF" title="Lab 3 TOF" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab4.html">Lab 4
+                        <img src="assets/img/lab4main.PNG" alt="Lab 4 IMU" title="Lab 4 IMU" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab5.html">Lab 5
+                        <img src="assets/img/lab5main.png" alt="Lab 5" title="Lab 5" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab6.html">Lab 6
+                        <img src="assets/img/lab6main.png" alt="Lab 6" title="Lab 6" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab7.html">Lab 7
+                        <img src="assets/img/lab7main.png" alt="Lab 7" title="Lab 7" height="175px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab8.html">Lab 8
+                        <img src="assets/img/lab8main.png" alt="Lab 8" title="Lab 8" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab9.html">Lab 9
+                        <img src="assets/img/lab9main.png" alt="Lab 9" title="Lab 9" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab10.html">Lab 10
+                        <img src="assets/img/lab10main.png" alt="Lab 10" title="Lab 10" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab11.html">Lab 11
+                        <img src="assets/img/lab11main.png" alt="Lab 11" title="Lab 11" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab12.html">Lab 12
+                        <img src="assets/img/lab12main.png" alt="Lab 12" title="Lab 12" height="90px" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-2">Lab 7 <span class="text-primary">Kalman Filters</span></h2>
+            <p class="mb-5">
+                The goal of this lab is to implement a Kalman Filter to execute the behaviour in the previous lab
+                faster.
+            </p>
+
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Estimating Drag and Momentum</h3>
+                    <p>
+                        In order to estimate the drag (d) and momentum (m), I ran the robot at 100 PWM (the max PWM from
+                        lab 6)
+                        for 4m. I collected timestamped distance data from the ToF during the run and used that to
+                        calculate the velocity.
+                    </p>
+                    <img class="mb-3" src="assets/img/lab7plot1.png" alt="" title="" width="60%">
+                    <p>
+                        In class we learnt:
+                    </p>
+                    <img class="mb-0" src="assets/img/lab7eq1.png" alt="" title="" height="70px">
+                    <p>
+                        From the graph I found the steady state velocity to be 1500mm/s. Taking <em>u</em> to be 1, we
+                        get
+                    </p>
+                    <img class="mb-0" src="assets/img/lab7eq2.png" alt="" title="" height="70px">
+                    <p>
+                        I then found the 90% rise time to be 1.5s which gives us
+                    </p>
+                    <img class="mb-0" src="assets/img/lab7eq3.png" alt="" title="" height="70px">
+                    <p>
+                        Using these values we can find our A and B matrices
+                    </p>
+                    <img class="mb-0" src="assets/img/lab7eq4.png" alt="" title="" height="150px">
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Initialising Kalman Filter</h3>
+                    <p>
+                        Using a sampling time of 0.065s (time between first two samples) I discretized the A and B
+                        matrices. I initialised the C matrix to be [-1, 0] since only ToF data is used and negative
+                        distance is measured. The state vector was initialised with the initial distance from the wall
+                        and 0 velocity as it was stationary.
+                    </p>
+                    <img class="mb-0" src="assets/img/lab7eq5.png" alt="" title="" height="220px">
+
+                    <p>
+                        I initialised the covariance matrices for the process &Sigma;<sub>u</sub> and sensor
+                        &Sigma;<sub>z</sub> noise. &sigma;<sub>3</sub> was given to us and the formulas for the trust
+                        in the modelled position and speed were used for &sigma;<sub>1</sub> and &sigma;<sub>2</sub>.
+                    </p>
+                    <img class="mb-4" src="assets/img/lab7eq6.png" alt="" title="" height="220px">
+
+                    <script src="https://gist.github.com/bhadrab/2a846ef592cb255a5ad614c9ea6cdb80.js"></script>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Implementing and Testing in Jupyter</h3>
+                    <p>
+                        I ran the Kalman filter on Jupyter to check that my parameters were correct. I used the code
+                        provided and my data from lab 6.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/54b533e48a67535891535ce44ccdf91d.js"></script>
+                    <p>
+                        Initial test: &sigma;<sub>1</sub> = &sigma;<sub>2</sub> = 39 and &sigma;<sub>3</sub> = 20
+                    </p>
+                    <img class="mb-4" src="assets/img/lab7plot2.png" alt="" title="" width="60%">
+                    <p>
+                        To my surprise it worked extremely well (so surprisingly well that I really thought I must have
+                        done something wrong so I went through and checked my code and calculations multiple times), the
+                        predicted values were very close to the measured values. I think they match so well because the
+                        sensor uncertainty is not very high, we can see that the KF steps when the sensor readings step
+                        although it also does predict value in between. I experimented with different sigma values
+                        because I was curious about how the filter would be affected. I noticed that higher
+                        &sigma;<sub>1</sub> and &sigma;<sub>2</sub> or lower &sigma;<sub>3</sub> made the KF prediction
+                        match the measured data better. This makes sense because by doing this we are putting more trust
+                        in our sensor data.
+                    </p>
+
+                    <p>
+                        &sigma;<sub>1</sub> = &sigma;<sub>2</sub> = 10 and &sigma;<sub>3</sub> = 100
+                    </p>
+                    <img class="mb-4" src="assets/img/lab7plot3.png" alt="" title="" width="60%">
+                    <p>
+                        &sigma;<sub>1</sub> = &sigma;<sub>2</sub> = 1 and &sigma;<sub>3</sub> = 20
+                    </p>
+                    <img class="mb-4" src="assets/img/lab7plot4.png" alt="" title="" width="60%">
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Kalman Filter on Robot</h3>
+                    <p>
+                        The goal was to recreate the task in lab 6 (speed towards a wall and stop 1 foot in front of it)
+                        using the KF so that it would be faster. I increased my kp to 0.06 (the speed of the KF allowed
+                        for this). I also increased my minimum PWM from 40 to 50 since for some reason my robot was no
+                        longer moving at 40 PWM input even though the battery was fully charged. This worked incredibly
+                        well with very little overshoot and quite precisely stopping at 1 foot.
+                    </p>
+                    <img class="mb-4" src="assets/img/lab7plot5.png" alt="" title="" width="60%">
+                    <img class="mb-4" src="assets/img/lab7plot6.png" alt="" title="" width="60%">
+                    <br>
+                    <video class="mb-3" width="300" controls="">
+                        <source src="assets/img/lab7.mp4" type="video/mp4">
+                    </video>
+
+                    <script src="https://gist.github.com/bhadrab/5251c927bab5cd73b3c909db1d7c1b3c.js"></script>
+                </div>
+            </div>
+
+            <p>
+                I referred to <a href="https://anyafp.github.io/ece4960/labs/lab7/">Anya's</a> and <a
+                    href="https://pages.github.coecis.cornell.edu/rc627/ECE-4960/lab7.html">Ryan's</a> pages whenever I
+                was confused.
+            </p>
+
+
+
+        </div>
+    </section>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fast Robots Labs</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Bhadra Bejoy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="hidescrollbar collapse navbar-collapse navbar-nav-scroll" id="navbarResponsive">
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#projects">Portfolio
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home
+                        <img src="assets/img/indexmain.png" alt="Home" title="Home Page " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab1.html">Lab 1
+                        <img src="assets/img/lab1main.PNG" alt="Lab 1 Artemis" title="Lab 1 Artemis " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab2.html">Lab 2
+                        <img src="assets/img/lab2main.PNG" alt="Lab 2 BLE" title="Lab 2 BLE" height="175px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab3.html">Lab 3
+                        <img src="assets/img/lab3main.PNG" alt="Lab 3 TOF" title="Lab 3 TOF" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab4.html">Lab 4
+                        <img src="assets/img/lab4main.PNG" alt="Lab 4 IMU" title="Lab 4 IMU" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab5.html">Lab 5
+                        <img src="assets/img/lab5main.png" alt="Lab 5" title="Lab 5" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab6.html">Lab 6
+                        <img src="assets/img/lab6main.png" alt="Lab 6" title="Lab 6" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab7.html">Lab 7
+                        <img src="assets/img/lab7main.png" alt="Lab 7" title="Lab 7" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab8.html">Lab 8
+                        <img src="assets/img/lab8main.png" alt="Lab 8" title="Lab 8" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab9.html">Lab 9
+                        <img src="assets/img/lab9main.png" alt="Lab 9" title="Lab 9" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab10.html">Lab 10
+                        <img src="assets/img/lab10main.png" alt="Lab 10" title="Lab 10" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab11.html">Lab 11
+                        <img src="assets/img/lab11main.png" alt="Lab 11" title="Lab 11" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab12.html">Lab 12
+                        <img src="assets/img/lab12main.png" alt="Lab 12" title="Lab 12" height="90px" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-2">Lab 2 <span class="text-primary">Bluetooth communication</span></h2>
+            <p class="mb-5">
+                The goal of this lab was to get the Artemis connected to our computer via bluetooth to send
+                commands and recieve data.
+            </p>
+
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Setup</h3>
+                    <p>
+                        To get my computer ready for this lab, I ensured that I had Python 3 and pip installed. I
+                        created
+                        a project directory and set up the virtual environment in it. I then installed numpy, pyyaml,
+                        colorama, nest_asyncio, bleak, and jupyterlab. I copied the provided codebase into the directory
+                        and read through it.
+                    </p>
+                    <p>
+                        On the Artemis side, I installed the ArduinoBLE library, and uploaded the ble_arduino.ino file
+                        from the codebase to the Artemis. This sketch printed the MAC address of the Artemis.
+                    </p>
+                    <img src="assets/img/lab2MACaddress.png" alt="..." width="100%" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Codebase</h3>
+                    <p>
+                        The codebase contains files for the Artemis and computer side.
+                    </p>
+                    <p>
+                        The Artemis side is in Arduino, there is a file that formats character arrays, a file
+                        that facilitates in sending and receiving data using BLE methods, and a file that
+                        responds to various commands.
+                    </p>
+                    <p>
+                        The computer side is written in python. A UUID or MAC address is used to connect this
+                        side to the Artemis side. The ArtemisBLEController class provides functions that allow
+                        the sending and receiving of data between the Artemis and Computer.
+                    </p>
+                    <p>
+                        The Arduino code is uploaded to the Artemis. When the artemis updates a characteristic in the
+                        BLE service,
+                        the computer side can receive that information. The computer can also send commands to the
+                        Artemis.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Bluetooth Connection</h3>
+                    <p>
+                        To get the Artemis connected to the computer via bluetooth, the first step was to define the
+                        addresses. The connections.yaml file was used to store addresses used for bluetooth connection.
+                        I added the MAC address of the Artemis (retrieved in prelab). I then generated a new uuid using
+                        the uuid4() function. I added this uuid to connections.yaml and ble_arduino.ino.
+                    </p>
+                    <p>
+                        I initially tried to connect using the uuid but this was unsuccessful, the computer either would
+                        not connect to the Artemis or the connection only lasted a few seconds. I resorted to using the
+                        MAC address, the only con of this is that there could be another Artemis with the same address.
+                        I, however, did not face any problems with this method. I ran the demo code (demo.ipynb)
+                        multiple times to ensure the connection was robust.
+                    </p>
+                    <p>Here are the outputs from each cell showing that the connection was successful.</p>
+                    <img src="assets/img/lab2demo1.png" alt="..." width="100%" />
+                    <img src="assets/img/lab2demo2.png" alt="..." width="100%" />
+                    <img src="assets/img/lab2demo3.png" alt="..." width="100%" />
+                    <img class="mb-3" src="assets/img/lab2demo4.png" alt="..." width="100%" />
+                    <p>On the Artemis side, this was the output to the serial monitor.</p>
+                    <img src="assets/img/lab2demo5.png" alt="..." width="55%" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Send ECHO Command</h3>
+                    <p>
+                        The first task was to write the ECHO command. This command sends a string from the computer to
+                        the Artemis and the artemis sends back the string after adding "Artemis Says:" to the
+                        beginning. This was implemented by adding a case in the ble_arduino.ino and then calling the
+                        command from the python side.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/3bec37014fe0ba58de70f1352d690e1c.js"></script>
+                    <img src="assets/img/lab2echo.png" alt="..." width="100%" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Get Time Command</h3>
+                    <p>
+                        I then added the command GET_TIME_MILLIS that when called, the Artemis sends a string displaying
+                        the time in millis to the computer. I added GET_TIME_MILLIS to the cmd_types.py file and the
+                        command types enumerator in the arduino code. A case was added to the ble_arduino.ino and then
+                        the command was called from the python side.
+                    </p>
+
+                    <script src="https://gist.github.com/bhadrab/369032f1823a7a4711aa48da7f727df7.js"></script>
+                    <img src="assets/img/lab2gettime.png" alt="..." width="100%" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Get Temperature Command</h3>
+                    <p>
+                        Two temperature commands (GET_TEMP_5s and GET_TEMP_5s_RAPID) were written. When these commands
+                        are called on the computer side, the artemis sends back a time stamped temperature reading from
+                        the on board sensor. I added both commands to the cmd_types.py file and the command types
+                        enumerator in the arduino code. Cases were added to the ble_arduino.ino for each and then the
+                        commands were called from the python side. The notification handler (discussed later) handled
+                        taking the outputs
+                        from these commands, formatting them, and printing them on the arduino side.
+                    </p>
+                    <p>
+                        The GET_TEMP_5s command sends 5 readings 1 second apart. Each reading is sent 1 at a time. A
+                        while loop was used to keep track of the number of readings, and delays were used to space them
+                        1s apart.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/82aca2b3cfa49e05dfbed91ce9513b0d.js"></script>
+                    <img class="mb-4" src="assets/img/lab2gettemp5.png" alt="..." width="100%" />
+                    <p>
+                        The GET_TEMP_5s_RAPID command sends as many readings as possible in 5 seconds. Millis were used
+                        to keep track of the time elapsed in a while loop. Each reading is sent 1 at a time. Between 200
+                        and 350 readings were usually taken. In this example, 250 readings were taken, the image shows
+                        the first 25 and the last 25, notice the time stamps to see that the first and last are 5
+                        seconds apart.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/2842b2f2ed19beb756acf99462c98275.js"></script>
+                    <img src="assets/img/lab2gettemp5rapid.png" alt="..." width="100%" />
+                    <img src="assets/img/lab2gettemp5rapidprints.png" alt="..." width="40%" />
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Notification Handler</h3>
+                    <p>
+                        I wrote a callback function for the start_notify function. It received the string value sent
+                        from
+                        the Artemis side, formatted it and printed it. It took in the string uuid and the byte array as
+                        inputs. This way whenever a string was received, it was automatically formatted and printed. The
+                        function was initially written for the GET_TIME_MILLIS command and simply extracted and printed
+                        the time ("T:" was removed), but as the temperature functions were added, I modified it to
+                        format the output from them as well.
+                    </p>
+                    <p>
+                        The call back function took care of the GET_TIME_MILLIS command separately by checking whether
+                        there was a "C" in the bytearray, an absence of a "C" indicated that just millis were sent so
+                        the time was extracted and printed.
+                    </p>
+                    <p>
+                        For the temperature functions, I created a counter and printed the count alongside the reading
+                        that was sent, this allowed each reading to be numbered and displayed nicely. I modified the
+                        case statements in ble_arduino.ino for the temperature commands to send "END" after it completed
+                        sending the temperature readings. On the computer side, if "END" was received, the counter was
+                        reset and nothing was printed until the next command was called.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/7477cfc6c1d7d4d991604c3ab15d8658.js"></script>
+
+                    <p>Code to send "END" added</p>
+                    <script src="https://gist.github.com/bhadrab/389dba19d76d6a04f763157c513e6f91.js"></script>
+
+                    <img class="mb-4" src="assets/img/lab2handleroutput.png" alt="..." width="100%" />
+
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Limitations</h3>
+                    <p>
+                        At 150Hz, 5 seconds of 16-bit values is 12,000 bits (150*5*16). The board has a 384kB of RAM,
+                        which is 3,072,000 bits (384*8000). This means 256 sets of 5 second 16-bit values can be stored
+                        (3,072,000/12000). This is assuming that all the RAM is available which is not the case, some
+                        space is allocated to the program, if we assume that about 5% is used up, then this takes us
+                        down to around 243 sets.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

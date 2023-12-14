@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fast Robots Labs</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Bhadra Bejoy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="hidescrollbar collapse navbar-collapse navbar-nav-scroll" id="navbarResponsive">
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#projects">Portfolio
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home
+                        <img src="assets/img/indexmain.png" alt="Home" title="Home Page " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab1.html">Lab 1
+                        <img src="assets/img/lab1main.PNG" alt="Lab 1 Artemis" title="Lab 1 Artemis " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab2.html">Lab 2
+                        <img src="assets/img/lab2main.PNG" alt="Lab 2 BLE" title="Lab 2 BLE" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab3.html">Lab 3
+                        <img src="assets/img/lab3main.PNG" alt="Lab 3 TOF" title="Lab 3 TOF" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab4.html">Lab 4
+                        <img src="assets/img/lab4main.PNG" alt="Lab 4 IMU" title="Lab 4 IMU" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab5.html">Lab 5
+                        <img src="assets/img/lab5main.png" alt="Lab 5" title="Lab 5" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab6.html">Lab 6
+                        <img src="assets/img/lab6main.png" alt="Lab 6" title="Lab 6" height="175px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab7.html">Lab 7
+                        <img src="assets/img/lab7main.png" alt="Lab 7" title="Lab 7" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab8.html">Lab 8
+                        <img src="assets/img/lab8main.png" alt="Lab 8" title="Lab 8" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab9.html">Lab 9
+                        <img src="assets/img/lab9main.png" alt="Lab 9" title="Lab 9" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab10.html">Lab 10
+                        <img src="assets/img/lab10main.png" alt="Lab 10" title="Lab 10" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab11.html">Lab 11
+                        <img src="assets/img/lab11main.png" alt="Lab 11" title="Lab 11" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab12.html">Lab 12
+                        <img src="assets/img/lab12main.png" alt="Lab 12" title="Lab 12" height="90px" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-2">Lab 6 <span class="text-primary">PID Speed Control</span></h2>
+            <p class="mb-5">
+                The goal of this lab was to get experience with PID control.
+            </p>
+
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Prelab : Debugging Data</h3>
+                    <p>I created a command START_PID that will be called on the computer side to run PID for 40s. While
+                        the robot was running, time, TOF, and PWM data were collected and stored in arrays on the
+                        Artemis side. Upon completion, the data was sent back to the computer.Only one of the ToFs on
+                        the front was used as I noticed that just one was enough to provide high
+                        accuracy.
+                    </p>
+
+                    <script src="https://gist.github.com/bhadrab/25aa2a4497b0fe5e8197c7113132969e.js"></script>
+                    <script src="https://gist.github.com/bhadrab/dadc20650aff6b86ad9567f5bccd64ad.js"></script>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Position Control Task</h3>
+                    <p>
+                        I chose to do Task A which involved starting the robot 2-4m from a wall, driving it as fast as
+                        possible and stopping it when it is 304mm away from the wall. Distance measurements from the TOF
+                        sensors and a P controller was used.
+                    </p>
+                    <h4 class="mb-0">P/I/D Discussion</h4>
+                    <p>
+                        A simple P controller was used as it is what I started with for simplicity and it worked well. A
+                        kp value of 0.04 was used. Given that the max distance away from the wall is 4m, this makes the
+                        max speed 160 PWM. This proved to be the value that was a good trade off between the extremley
+                        aggresive controller causing overshoot and the very slow controller.
+                    </p>
+                    <p>
+                        I arrived at this value by first starting with 0.03 as I saw that a lot of students used this
+                        value in the 2022 class. I found it to work well but was extremley slow. I increased that value
+                        and found that anything above 0.04 was causing too much overshoot.
+                    </p>
+                    <hr>
+                    </hr>
+                    <h4 class="mb-0">Range and Sampling Time</h4>
+                    <p>
+                        I used the long distance mode which allows a range of 3.6m. I was considering adding code to
+                        switch to the short mode after a certain distance threshold but the long mode provided
+                        sufficient accuracy even close to the wall. I tested the controller starting at various points
+                        between 3.5m and 0.1m. The further I started there was slightly more overshoot because of the
+                        momentum the car picked up (this was really only seen at Kp = 0.04 not at 0.03). If I started
+                        too close, sometimes 40 PWM was not enough of a starting speed to get the car moving (was more
+                        of an issue on carpet than smooth floor).
+                    </p>
+                    <p>
+                        I found the sampling time was about 40ms. I made sure that the distance was only being read and
+                        stored whenever new data was ready. Data is also only being sent once the target has been
+                        reached which reduces the sampling time. This sampling time is likely what causes any overshoot
+                        but it is small enough to still have a successful controller.
+                    </p>
+
+                    <hr>
+                    </hr>
+                    <h4 class="mb-0">PID Function</h4>
+                    <p>
+                        I wrote the PID function on the Artemis side. The distance measured by the ToF was used to find
+                        the error (distance from target) which was then used to determine the PWM value to spin the
+                        motors at as well as the direction the robot should move. I also constrained PWM to be between
+                        40 and 255 (range determined in Lab 5).
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/66be99d5a3283a8f0fae54f75afe580b.js"></script>
+
+                    <hr>
+                    </hr>
+                    <h4 class="mb-0">Plots </h4>
+                    <p>
+                        I plotted the distance (mm) from the wall, and signed PWM vs time (millis).
+                    </p>
+
+                    <p>
+                        kp = 0.03
+                    </p>
+                    <img src="assets/img/lab6plot1.png" alt="..." width="40%">
+                    <img src="assets/img/lab6plot2.png" alt="..." width="40%">
+                    <hr>
+                    </hr>
+                    <p>
+                        kp = 0.04
+                    </p>
+                    <img src="assets/img/lab6plot3.png" alt="..." width="40%">
+                    <img src="assets/img/lab6plot4.png" alt="..." width="40%">
+
+                    <hr>
+                    </hr>
+                    <h4 class="mb-0">Videos </h4>
+                    <p>
+                        Trial 1: Example of very large kp causing overshoot
+                    </p>
+                    <video class="mb-3" height="400" controls="">
+                        <source src="assets/img/lab6fail.mp4" type="video/mp4">
+                    </video>
+                    <hr>
+                    </hr>
+                    <p>
+                        Trial 2: kp = 0.03 on smooth surface from 2 meters
+                    </p>
+                    <video class="mb-3" height="400" controls="">
+                        <source src="assets/img/lab6good.mp4" type="video/mp4">
+                    </video>
+                    <hr>
+                    </hr>
+                    <p>
+                        Trial 3: kp = 0.04 on carpet from 3 meters
+                    </p>
+                    <video class="mb-3" height="400" controls="">
+                        <source src="assets/img/lab6carpet.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

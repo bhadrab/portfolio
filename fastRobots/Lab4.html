@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fast Robots Labs</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Bhadra Bejoy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="hidescrollbar collapse navbar-collapse navbar-nav-scroll" id="navbarResponsive">
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#projects">Portfolio
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home
+                        <img src="assets/img/indexmain.png" alt="Home" title="Home Page " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab1.html">Lab 1
+                        <img src="assets/img/lab1main.PNG" alt="Lab 1 Artemis" title="Lab 1 Artemis " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab2.html">Lab 2
+                        <img src="assets/img/lab2main.PNG" alt="Lab 2 BLE" title="Lab 2 BLE" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab3.html">Lab 3
+                        <img src="assets/img/lab3main.PNG" alt="Lab 3 TOF" title="Lab 3 TOF" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab4.html">Lab 4
+                        <img src="assets/img/lab4main.PNG" alt="Lab 4 IMU" title="Lab 4 IMU" height="175px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab5.html">Lab 5
+                        <img src="assets/img/lab5main.png" alt="Lab 5" title="Lab 5" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab6.html">Lab 6
+                        <img src="assets/img/lab6main.png" alt="Lab 6" title="Lab 6" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab7.html">Lab 7
+                        <img src="assets/img/lab7main.png" alt="Lab 7" title="Lab 7" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab8.html">Lab 8
+                        <img src="assets/img/lab8main.png" alt="Lab 8" title="Lab 8" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab9.html">Lab 9
+                        <img src="assets/img/lab9main.png" alt="Lab 9" title="Lab 9" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab10.html">Lab 10
+                        <img src="assets/img/lab10main.png" alt="Lab 10" title="Lab 10" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab11.html">Lab 11
+                        <img src="assets/img/lab11main.png" alt="Lab 11" title="Lab 11" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab12.html">Lab 12
+                        <img src="assets/img/lab12main.png" alt="Lab 12" title="Lab 12" height="90px" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-2">Lab 4 <span class="text-primary">IMU</span></h2>
+            <p class="mb-5">
+                The goal of this lab was to use the accelerometer and gyroscope on the 9DOF IMU sensor to collect
+                accurate and reliable information about the robots position.
+            </p>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">IMU Set up</h3>
+                    <p>I connected the IMU to the QWIIC breakout board</p>
+                    <img class="mb-3" src="assets/img/lab4wiring.jpg" alt="..." width="40%" />
+
+                    <p>
+                        I ran the provided example code and observed the raw accelerometer and gyroscope values using
+                        the serial monitor and plotter. The
+                        accelerometer data only changed when the IMU was in motion, the data was pretty noisy, and 1
+                        dimension showed the acceleration due to gravity. The gyroscope data was cleaner and simply
+                        rotating the IMU was enough to see changes in the data.
+                    </p>
+
+
+                    <video class="mb-3" height="500" controls="">
+                        <source src="assets/img/lab4observe.mp4" type="video/mp4">
+                    </video>
+                    <br />
+                    <br />
+                    <p>
+                        This image shows the outputs from the example code when the IMU is flat.
+                    </p>
+                    <img class="mb-3" src="assets/img/lab4examplecode.png" alt="..." width="100%" />
+                    <br />
+                    <br />
+
+
+
+                    <p>
+                        The AD0_VAL definition should be set to 1 since the ADR jumper was not closed on the IMU.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Accelerometer</h3>
+                    <p>
+                        I used the IMU code from lecture to convert the raw accelerometer values to pitch and roll. I
+                        switched pitch and roll to match the diagram shown in class.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/37b10371e4306cc52fc9ede28b85d190.js"></script>
+                    <p>
+                        I ran the car over the IMU so that it was collecting data in the presence of some noise from the
+                        motors. I ran an FFT on that data using this <a
+                            href="https://www.alphabold.com/fourier-transform-in-python-vibration-analysis/">tutorial.</a>
+                        The data was not very noisy but I decided to add a low pass filter because the accelerometer
+                        will be more prone to noise when it is on the car. The necessary data seemed to be in the
+                        &lt;1Hz range so I chose alpha = 0.2 and low passed both
+                        the pitch and roll. I ran the FFT again and noticed that the noise had reduced.
+                    </p>
+                    <img class="" src="assets/img/lab4timedomain.png" alt="..." width="100%" />
+                    <img class="mb-3" src="assets/img/lab4freqdomain.png" alt="..." width="100%" />
+
+                    <p>
+                        I then measured pitch and roll at -90, 0, & 90 degrees
+                    </p>
+                    <p><i>Pitch = Roll = 0</i></p>
+                    <img class="" src="assets/img/lab4pr0.jpg" alt="..." width="10%" />
+                    <img class="mb-3" src="assets/img/lab4pr0.png" alt="..." width="80%" />
+                    <p><i>Pitch = 90</i></p>
+                    <img class="" src="assets/img/lab4p90.jpg" alt="..." width="10%" />
+                    <img class="mb-3" src="assets/img/lab4p90.png" alt="..." width="80%" />
+                    <p><i>Pitch = -90</i></p>
+                    <img class="" src="assets/img/lab4pn90.jpg" alt="..." width="10%" />
+                    <img class="mb-3" src="assets/img/lab4pn90.png" alt="..." width="80%" />
+                    <p><i>Roll = 90</i></p>
+                    <img class="" src="assets/img/lab4r90.jpg" alt="..." width="10%" />
+                    <img class="mb-3" src="assets/img/lab4r90.png" alt="..." width="80%" />
+                    <p><i>Roll = -90</i></p>
+                    <img class="" src="assets/img/lab4rn90.jpg" alt="..." width="10%" />
+                    <img class="mb-3" src="assets/img/lab4rn90.png" alt="..." width="80%" />
+
+                    <p>
+                        The accelerometer was quite accurate and consistent especially after adding the low pass filter.
+                        However, if pitch or roll shifted more than 90 degrees, the other value would behave
+                        unexpectedly. So it is accurate in the 90 to -90 range.
+                    </p>
+
+
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Gyroscope</h3>
+                    <p>
+                        I also used the lab example to get pitch, roll, and yaw from the raw gyroscope data.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/e3995e59e095e873ca4316abe564181a.js"></script>
+
+                    <p>
+                        I played around with it and I noticed that it was accurate (better than accelerometer values)
+                        and
+                        not noisy but any sudden changes would cause the error to grow quickly and the data would be
+                        biased.
+                    </p>
+
+
+                    <video class="mb-3" height="500" controls="">
+                        <source src="assets/img/Lab4gyro.mp4" type="video/mp4">
+                    </video>
+
+                    <p>
+                        To fix the biasing issue but take advantage of the accuracy I created a complementary filter. I
+                        played around with the weights for the gyro data and the accelerometer data and decided to give
+                        90% of the weight to the gyro. This resulted in the most accurate but stable measurements. The
+                        constraint from the accelerometer remained, that is, if the pitch or roll exceeds a 90 degree
+                        rotation, the other value will behave unexpectedly. So, it is accurate and reliable in the 90 to
+                        -90 range as seen in the video below.
+                    </p>
+
+
+                    <video class="mb-3" height="500" controls="">
+                        <source src="assets/img/Lab4compfilt.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Sample Data</h3>
+                    <p>
+                        I edited the BLE_arduino code from the previous labs so that I could send both TOF and IMU data
+                        to the computer. I first just sent the IMU data and noticed that the sampling time was about 9ms
+                        while the TOF sampling rate was about 11ms. Because of this difference in samping rates I
+                        decided to create another BLE string characteristic so that they could both be called
+                        simultaneously and data will be sent to the computer whenever it is ready in 2 separate strings.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/50b89995c450ff5d6b546b24fed64995.js"></script>
+                    <br />
+                    <br />
+                    <p>
+                        Image of IMU data (0 degrees pitch and roll) sent over BLE and parsed using call back function.
+                    </p>
+                    <img class="" src="assets/img/lab4bledata1.png" alt="..." width="80%" />
+                    <img class="mb-3" src="assets/img/lab4bledata2.png" alt="..." width="80%" />
+                    <img class="mb-6" src="assets/img/lab40pr.png" alt="..." width="40%" />
+                    <p>
+                        I noticed that the first few values were always noisy but after a few seconds that data was
+                        accurate. I tried debugging this issue but I was not successful. When I am using this data as
+                        control inputs I will make sure to add a delay to ensure I am using accurate measurements.
+                    </p>
+                    <br />
+
+                    <p>
+                        5 seconds of IMU and TOF data sent over BLE and parsed using separate call back functions.
+                    </p>
+                    <img class="" src="assets/img/lab4bleboth1.png" alt="..." width="80%" />
+                    <img class="mb-3" src="assets/img/lab4bleboth2.png" alt="..." width="80%" />
+
+                    <p>
+                        I noticed that the sampling rate was significantly reduced when both were being sent so I
+                        decided to collect and send 5s of data at a time instead of sending new measurements as they are
+                        received.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Cut the Coord</h3>
+                    <p>
+                        I cut the connector off of the 650mAh battery, one wire at a time, and soldered it to the JST
+                        connector so that it can be used to power the Artemis as shown. I ensured that I was still able
+                        to send data via bluetooth when the Artemis was only powered by the battery.
+                    </p>
+                    <img class="mb-3" src="assets/img/lab4battery.jpg" alt="..." width="40%" />
+                    <p>
+                        The 850mAh battery will be used to power the RC car because the car requires more power and
+                        therefore the extra capacity from the battery will allow the car to run for longer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Stunt</h3>
+                    <p>
+                        I first played with the RC car to get a handle on its movements. I also picked it up and pressed
+                        the buttons on the remote so I could more closely inspect which way the wheels were turning.
+                    </p>
+
+                    <video class="mb-3" height="500" controls="">
+                        <source src="assets/img/Lab4stuntnoartemis.mp4" type="video/mp4">
+                    </video>
+                    <br />
+                    <br />
+                    <p>
+                        I then attached the Artemis along with the battery and sensors to the car and made it do some
+                        stunts while sending sensor data over BLE.
+                    </p>
+
+                    <video class="mb-3" height="500" controls="">
+                        <source src="assets/img/Lab4stunt.mp4" type="video/mp4">
+                    </video>
+                    <br />
+                    <br />
+                    <p>
+                        I plotted the received data and noticed expected behavior.
+                    </p>
+
+                    <img class="mb-3" src="assets/img/lab4final.png" alt="..." width="60%" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

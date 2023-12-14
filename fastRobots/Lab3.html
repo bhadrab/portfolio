@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fast Robots Labs</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Bhadra Bejoy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="hidescrollbar collapse navbar-collapse navbar-nav-scroll" id="navbarResponsive">
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#projects">Portfolio
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home
+                        <img src="assets/img/indexmain.png" alt="Home" title="Home Page " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab1.html">Lab 1
+                        <img src="assets/img/lab1main.PNG" alt="Lab 1 Artemis" title="Lab 1 Artemis " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab2.html">Lab 2
+                        <img src="assets/img/lab2main.PNG" alt="Lab 2 BLE" title="Lab 2 BLE" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab3.html">Lab 3
+                        <img src="assets/img/lab3main.PNG" alt="Lab 3 TOF" title="Lab 3 TOF" height="175px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab4.html">Lab 4
+                        <img src="assets/img/lab4main.PNG" alt="Lab 4 IMU" title="Lab 4 IMU" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab5.html">Lab 5
+                        <img src="assets/img/lab5main.png" alt="Lab 5" title="Lab 5" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab6.html">Lab 6
+                        <img src="assets/img/lab6main.png" alt="Lab 6" title="Lab 6" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab7.html">Lab 7
+                        <img src="assets/img/lab7main.png" alt="Lab 7" title="Lab 7" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab8.html">Lab 8
+                        <img src="assets/img/lab8main.png" alt="Lab 8" title="Lab 8" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab9.html">Lab 9
+                        <img src="assets/img/lab9main.png" alt="Lab 9" title="Lab 9" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab10.html">Lab 10
+                        <img src="assets/img/lab10main.png" alt="Lab 10" title="Lab 10" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab11.html">Lab 11
+                        <img src="assets/img/lab11main.png" alt="Lab 11" title="Lab 11" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab12.html">Lab 12
+                        <img src="assets/img/lab12main.png" alt="Lab 12" title="Lab 12" height="90px" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-2">Lab 3 <span class="text-primary">TOF Sensors</span></h2>
+            <p class="mb-5">The goal of this lab was to connect the TOF sensors to the artemis and test the range and
+                accuracy.</p>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Prelab</h3>
+                    <p>
+                        I first looked through the TOF sensors (VL53L1X) datasheet. I found that the default I2C address
+                        is 0x29. I then looked through the pin functions and found that the sensor can be turned off
+                        using the XSHUT pin. This is useful because in order to communicate with two sensors, their I2C
+                        address should be different. One sensor can be shut off so that there is only 1 device on the
+                        I2C line and its address can be changed.
+                    </p>
+                    <p>
+                        I decided to place both sensors on the front of the robot so that the readings are more
+                        accurate. Two sensors reading the same distance and averaged will be more resistant to error. I
+                        looked through the available connectors and decided to use the longer cables for the sensors. I
+                        planned to wire everything up as shown.
+
+                    </p>
+                    <img class="mb-3" src="assets/img/lab3wiring.png" alt="..." width="50%" />
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Task 1: Connect First TOF</h3>
+                    <p>
+                        I cut off one side of the QWIIC connector and soldered it to the TOF. I checked the QWIIC
+                        connector datasheet to determine which color mapped to SDA and SCL. I soldered it in such a way
+                        that the sensor face is not obstructed. I attached the other end to the QWIIC breakout board and
+                        then that to the Artemis.
+
+                    </p>
+                    <img class="mb-3" src="assets/img/lab31tof.jpg" alt="..." width="50%" />
+                    <p>
+                        I then installed the SparkFun VL53L1X arduino library. I ran the wire_I2C Apollo example to
+                        check the address of the device. This matched the address on the datasheet.
+                    </p>
+                    <img src="assets/img/lab3addressscan.png" alt="..." width="100%" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Task 2: Read From First TOF</h3>
+                    <p>
+                        The sensors have three modes, short, medium, and long. The short mode works better when there is
+                        more ambient light and it has a maximum distance of 1.3m. Because it is less error prone in high
+                        light, it seems like a better option, and 1.3m seems sufficient, however, that might change
+                        based on future labs. Since both are being placed on the front of the robot, putting one in long
+                        mode and the other in short might be a good option.
+                    </p>
+                    <p>
+                        I ran the ReadDistace example from the SparkFun library. Once I ensured that this was working, I
+                        modified the code a to get data to plot. I took samples 5cm apart from 0cm to 150cm, I got 10
+                        readings for each. I set up a tape measure and pointed the TOF against a wall. The readings were
+                        accurate until about 130 cm and then the values started dropping. This is the expected behavior
+                        in short mode.
+                    </p>
+                    <img src="assets/img/lab3distanceaccuracy.png" class="mb-3" alt="..." width="60%" />
+                    <p>
+                        I also added code to find the ranging time. I found the time with and without .stopRanging().
+                        With .stopRanging() it averaged out to 95ms and without it was 93ms.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Task 3: Two TOFs</h3>
+                    <p>
+                        I added the next TOF as described previously, I used the XSHUT pin to turn this sensor off and
+                        change the address of the other sensor. I soldered pin 8 of the Artemis to the TOF XSHUT. I
+                        ensured that the readings of the two were similar when placed in similar positions.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/8ea0896b25723362dba75fb28a0aec62.js"></script>
+                    <img src="assets/img/lab32sensoroutput.png" alt="..." width="50%" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Task 4: TOF Speed</h3>
+                    <p>
+                        To ensure that readings were taken as fast as possible, I removed .stopRanging() and moved
+                        .startRanging() to the setup so that it only runs once. I used .checkForDataReady() to only
+                        print the readings when a new one is ready. This ensures that the code does not hang waiting for
+                        a reading. I also added code to print the timestamp, and this shows that the loop runs even when
+                        there are no sensor readings as sometimes the timestamp is printed multiple times without sensor
+                        readings. I kept track of the time when the loop was entered and after the readings were taken
+                        to see how quickly the loop executes. It seemed to take between 9ms and 10ms. We can see that
+                        the loop time when readings were not ready was 4-5ms so the readings themselves take half the
+                        time which is limiting the speed. However, this is a very good sample rate.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/286616c1a49258e9a5b49841463625b7.js"></script>
+                    <img src="assets/img/lab3tofspeed.png" alt="..." width="100%" />
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Task 5: Send Data to Computer</h3>
+                    <p>
+                        I modified my code from lab 2 so that I could send TOF data from the Artemis to the computer via
+                        bluetooth. I added all the setup code I wrote for this lab to ble_arduino.ino and then I added a
+                        case for GET_TOF_5s. I collected data from both sensors for 5 seconds. I sent back a timestamped
+                        string containing a reading from each sensor.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/f61597d28e13b88dfbc906ac22b9923e.js"></script>
+
+
+                    <p>
+                        On the computer side I created a handler for the TOF data. I created 3 arrays, 1 for time, 1 for
+                        TOF1 data, and 1 for TOF2 data. In the handler I parsed through the received byte array and
+                        added the appropriate parts of it to the appropriate arrays. I then used matplot.lib to plot
+                        both the distances over time.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/d1724a36211ce06fd0e6ee6b640c9b86.js"></script>
+                    <img src="assets/img/lab3tofplot.png" alt="..." width="50%" />
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

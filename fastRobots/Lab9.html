@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fast Robots Labs</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Bhadra Bejoy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="hidescrollbar collapse navbar-collapse navbar-nav-scroll" id="navbarResponsive">
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html#projects">Portfolio
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home
+                        <img src="assets/img/indexmain.png" alt="Home" title="Home Page " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab1.html">Lab 1
+                        <img src="assets/img/lab1main.PNG" alt="Lab 1 Artemis" title="Lab 1 Artemis " height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab2.html">Lab 2
+                        <img src="assets/img/lab2main.PNG" alt="Lab 2 BLE" title="Lab 2 BLE" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab3.html">Lab 3
+                        <img src="assets/img/lab3main.PNG" alt="Lab 3 TOF" title="Lab 3 TOF" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab4.html">Lab 4
+                        <img src="assets/img/lab4main.PNG" alt="Lab 4 IMU" title="Lab 4 IMU" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab5.html">Lab 5
+                        <img src="assets/img/lab5main.png" alt="Lab 5" title="Lab 5" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab6.html">Lab 6
+                        <img src="assets/img/lab6main.png" alt="Lab 6" title="Lab 6" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab7.html">Lab 7
+                        <img src="assets/img/lab7main.png" alt="Lab 7" title="Lab 7" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab8.html">Lab 8
+                        <img src="assets/img/lab8main.png" alt="Lab 8" title="Lab 8" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab9.html">Lab 9
+                        <img src="assets/img/lab9main.png" alt="Lab 9" title="Lab 9" height="175px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab10.html">Lab 10
+                        <img src="assets/img/lab10main.png" alt="Lab 10" title="Lab 10" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab11.html">Lab 11
+                        <img src="assets/img/lab11main.png" alt="Lab 11" title="Lab 11" height="90px" />
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Lab12.html">Lab 12
+                        <img src="assets/img/lab12main.png" alt="Lab 12" title="Lab 12" height="90px" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-2">Lab 9 <span class="text-primary">Mapping</span></h2>
+            <p class="mb-5">
+                The goal of this lab was to use the TOF sensors and angular speed control to map out a room.
+            </p>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Control</h3>
+                    <p>
+                        The robot's angular speed (collected using the IMU and low passed as done in lab 4) was used as
+                        feedback to the proportional controller in order to spin about its centre at a steady rate. I
+                        started by first spinning it using open loop control and determined the minimum PWM value
+                        necessary to get the robot to spin, this turned out to be 85. I also noted that the right side
+                        was spinning faster than the left side (not something that was prevalent during lab 5) causing
+                        it to veer off axis, so I made sure to have the left motor receiving a PWM value 1 higher. I
+                        also taped the wheels to reduce resistance.
+                    </p>
+                    <p>
+                        Once this minimum threshold was determined, I used a proportional controller that I called from
+                        the computer to spin the robot at about 60 deg/s resulting in a data point every 5 degrees on
+                        average. This resolution is lower than the recommended resolution but this seemed to get the
+                        best results, anything slower simply was not moving or only 1 set of wheels would turn at a
+                        time,
+                        moving the robot off axis. I set the robot to spin for 14s resulting in about 2 rotations. I
+                        noticed that at the 3rd rotation the robot shifted too much.
+                    </p>
+
+                    <script src="https://gist.github.com/bhadrab/0cbd053b5f0c9631976e02ed25fe2eb1.js"></script>
+
+                    <video class="mb-3" width="300" controls="">
+                        <source src="assets/img/lab9spin.mp4" type="video/mp4">
+                    </video>
+
+                    <p>
+                        On the Artemis side I collected timestamped, distance, angular velocity, and PWM and sent the
+                        data to the computer. To ensure that the PID controller worked well and the robot was spinning
+                        uniformly, I calculated the average of the angular velocity and made sure that it averaged about
+                        60 deg/s.
+                    </p>
+
+                    <img class="mb-4" src="assets/img/lab9angV.png" alt="" title="" width="40%">
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Read out Distances</h3>
+                    <p>
+                        I placed the robot on each of the 4 marked points in the lab space (in the same orientation) and
+                        stored the data. I then plotted the distance vs time and noticed that the 2 rotations did not
+                        match up very well (this was expected as I did notice that the robot would veer off axis by the
+                        second turn) so I decided to split them in to 2 data sets and use the set that matched up with
+                        the other sets. This turned out to be the 1st rotation for all of them. I saw that the angular
+                        velocity remained quite constant about 60 deg/s so I decided that I could trust that the
+                        readings were spaced equally (about every 5 degrees).
+                    </p>
+                    <img class="mb-4" src="assets/img/lab9dvst.png" alt="" title="" width="100%">
+                    <p>
+                        I then plotted the points on polar coordinates and I could already see the shape of the room and
+                        obstacles come up. I had to shift the angles for each of them so the corners were oriented in
+                        the expected direction. I also had to slightly alter the scale for some of them since there was
+                        some variance on the angular speed, this was easy to do because I just had to ensure that all
+                        corners were right angles.
+                    </p>
+                    <img class="mb-4" src="assets/img/lab9polar.png" alt="" title="" width="100%">
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Merge and Plot Readings</h3>
+                    <p>
+                        The next step was to merge all these readings together to plot the room. I needed to convert the
+                        (r,&theta;) points to (x,y) points as well as convert them to the inertial reference frame of
+                        the room. I used the transformation matrix below to do this. I also then offset each x and y
+                        value based on the initial point the robot captured them from. I simplified the transformation
+                        matrix and used a python script to do this conversion.
+                    </p>
+                    <img class="mb-4" src="assets/img/lab9tmat.png" alt="" title="" width="40%">
+                    <script src="https://gist.github.com/bhadrab/59695f80f1c5e8c0557fc8c6fd64c162.js"></script>
+                    <p>
+                        I plotted all four data sets and the room took form.
+                    </p>
+                    <img class="mb-4" src="assets/img/lab9plotted.png" alt="" title="" width="80%">
+
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Line-Based Map</h3>
+                    <p>
+                        I estimated where the walls were based on the concentration of points in the area, ignoring
+                        obvious noise.
+                    </p>
+                    <script src="https://gist.github.com/bhadrab/8b57e457ff1408239b0e5032be112e99.js"></script>
+                    <img class="mb-4" src="assets/img/lab9withwalls.png" alt="" title="" width="80%">
+                    <img class="mb-4" src="assets/img/lab9actual.jpg" alt="" title="" width="50%">
+
+                    <p>
+                        Comparing my map to the actual room, I think I got a good resolution, it is definitely very
+                        skewed and the obstacles were not recognised as well as the walls, this is likely because the
+                        walls mostly only relied on data from one location while the obstacles relied on data from
+                        multiple so the slight issues in each data set got compounded to make the obstacles skewed.
+                    </p>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
